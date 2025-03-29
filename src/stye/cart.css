@@ -1,0 +1,135 @@
+/* Cart container */
+.cart_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Cart image section */
+.cart_imag {
+  display: flex;
+  align-items: center;
+}
+
+.cart_imag img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+
+/* Title styling */
+.cart_imag p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Quantity controls section */
+.quantity_controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity_controls button {
+  background-color: black;
+  color: white;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+.quantity_controls button:hover {
+  background-color: #444;
+}
+
+.quantity_controls span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Price section */
+.cart_box div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Price styling */
+.cart_box div:last-child span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #e60000;
+}
+
+/* Remove button */
+.cart_box div:last-child button {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.cart_box div:last-child button:hover {
+  background-color: #cc0000;
+}
+
+/* Total Price Section */
+.total {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 15px 20px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cart_box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .cart_imag img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .quantity_controls {
+    gap: 5px;
+  }
+
+  .cart_box div:last-child {
+    margin-top: 10px;
+    gap: 5px;
+  }
+
+  .total {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+}

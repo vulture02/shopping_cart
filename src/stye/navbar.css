@@ -1,0 +1,89 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+nav {
+  background-color: black; /* Green background */
+  color: white;
+  padding: 10px 20px;
+}
+
+/* Nav Box */
+.nav_box {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+/* My Shop */
+.my_shop {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+  margin: 10px;
+  flex: 1; /* Allows this element to grow */
+}
+
+/* Cart */
+.cart span:nth-child(1) {
+  color: orange;
+  border-radius: 50%;
+  padding: 2px 8px;
+  font-size: 2rem;
+  padding-right: 1px;
+}
+
+.cart span:nth-child(2) {
+  padding: 0 3px;
+  background-color: white;
+  border-radius: 50%;
+  font-weight: bold;
+  color: orange;
+  position: relative;
+  top: -15px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  /* Adjust navigation layout for smaller screens */
+  .nav_box {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: flex-start; /* Align items to the left */
+  }
+
+  .my_shop {
+      font-size: 1.2rem; /* Smaller font size */
+      margin: 5px 0; /* Adjust margin */
+  }
+
+  .cart span:nth-child(1) {
+      font-size: 1.5rem; /* Reduce size of the cart icon */
+  }
+
+  .cart span:nth-child(2) {
+      font-size: 1rem; /* Adjust size of the cart number */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for very small screens */
+  .my_shop {
+      font-size: 1rem; /* Even smaller font size */
+  }
+
+  .cart span:nth-child(1) {
+      font-size: 1.2rem; /* Smaller cart icon */
+  }
+
+  .cart span:nth-child(2) {
+      font-size: 0.9rem; /* Smaller cart number */
+  }
+}
